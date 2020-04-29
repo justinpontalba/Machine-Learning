@@ -25,7 +25,7 @@ diabetes_X = pd.DataFrame(data = diabetes.data, columns = diabetes.feature_names
 diabetes_Y = diabetes.target.reshape(-1,1)
 
 # Use only one feature
-diabetes_X = diabetes_X.filter({'bmi'})
+diabetes_X = diabetes_X.filter({'bmi','s1','s2'})
 
 # Split data into training and testing sets
 
